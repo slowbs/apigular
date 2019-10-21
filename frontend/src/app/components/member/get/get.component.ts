@@ -126,6 +126,7 @@ export class GetComponent implements OnInit {
     this.memberItems.map(item => {
       item.checked = this.checkAll
       return item
-    })
+    });
+    //this.memberService.deleteAllModel = [];
   }
 }
