@@ -1,0 +1,18 @@
+.form-control{
+    border-radius: 2px;
+    box-shadow: none;
+    border-color: #dddddd;
+}
+
+.btn{
+    color: #fff;
+    /* float: right; */
+    font-size: 13px;
+    border: none;
+    min-width: 50px;
+    border-radius: 2px;
+    border: none;
+    outline: none !important;
+    /* margin-left: 10px; */
+    height: 34px;
+}

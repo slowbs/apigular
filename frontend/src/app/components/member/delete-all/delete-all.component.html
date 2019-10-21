@@ -1,0 +1,28 @@
+<!-- Delete Modal HTML -->
+<div id="deleteAllEmployeeModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form (submit)="onSubmit()">
+          <div class="modal-header">
+            <h4 class="modal-title">Delete All Member</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body" *ngIf="memberService.deleteAllModel.length > 0 else emptyItem">
+            <p>Are you sure you want to delete these Records?</p>
+            <p class="text-warning"><small>This action cannot be undone.</small></p>
+          </div>
+          <div class="modal-footer">
+            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+            <input type="submit" class="btn btn-danger" value="Delete" *ngIf="memberService.deleteAllModel.length > 0">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #emptyItem>
+    <div class="modal-body">
+      <p>กรุณาเลือกสมาชิก</p>
+      <!-- <p class="text-warning"><small>กรุณาเลือกสมาชิก</small></p> -->
+    </div>
+  </ng-template>

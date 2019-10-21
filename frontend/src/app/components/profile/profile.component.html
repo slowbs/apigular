@@ -1,0 +1,55 @@
+<div class="container" *ngIf="profileItem">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div class="table-wrapper">
+                <div class="table-title">
+                    <h2><i class="fa fa-lock"></i> Profile <b>Page</b></h2>
+                </div>
+                <br>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>ID</th>
+                            <th>{{ profileItem.mem_id }}</th>
+                        </tr>
+                        <tr>
+                            <th>Name</th>
+                            <td>{{ profileItem.mem_name }}</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>{{ profileItem.mem_email }}</td>
+                        </tr>
+                        <tr>
+                            <th>Phone</th>
+                            <td>{{ profileItem.mem_phone }}</td>
+                        </tr>
+                        <tr>
+                            <th>Address</th>
+                            <td>{{ profileItem.mem_address }}</td>
+                        </tr>
+                        <tr>
+                            <th>Created at</th>
+                            <td>{{ profileItem.mem_created }}</td>
+                        </tr>
+                        <tr>
+                            <th>Updated at</th>
+                            <td>{{ profileItem.mem_updated }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="form-group" align="right">
+                    <button class="btn btn-danger" (click)="onLogout()">
+                        <i class="fa fa-sign-out"></i> Log out
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
