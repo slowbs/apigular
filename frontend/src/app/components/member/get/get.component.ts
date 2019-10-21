@@ -127,6 +127,6 @@ export class GetComponent implements OnInit {
       item.checked = this.checkAll
       return item
     });
-    //this.memberService.deleteAllModel = [];
+    this.memberService.deleteAllModel = [];
   }
 }

@@ -19,17 +19,17 @@ export class DeleteAllComponent implements OnInit {
   }
 
   public onSubmit() {
-    console.log(this.memberService.deleteAllModel)
-    // this.memberService
-    // .deleteAllItem(this.memberService.deleteAllModel)
-    // .subscribe(
-    //   //result => {console.log(result)},
-    //   result => {
-    //     this.getComp.ngOnInit()
-    //     $('#deleteAllEmployeeModal').modal('hide');
-    //   },
-    //   excep => alert(excep.error.message)
-    // );
+    //console.log(this.memberService.deleteAllModel)
+    this.memberService
+    .deleteAllItem(this.memberService.deleteAllModel)
+    .subscribe(
+      //result => {console.log(result)},
+      result => {
+        this.getComp.ngOnInit()
+        $('#deleteAllEmployeeModal').modal('hide');
+      },
+      excep => alert(excep.error.message)
+    );
   }
 
 }
