@@ -19,7 +19,7 @@ export class DeleteAllComponent implements OnInit {
   }
 
   public onSubmit() {
-    //console.log(this.memberService.deleteAllModel)
+    // console.log(this.memberService.deleteAllModel)
     this.memberService
     .deleteAllItem(this.memberService.deleteAllModel)
     .subscribe(

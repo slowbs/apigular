@@ -102,6 +102,7 @@ export class GetComponent implements OnInit {
     this.startPage = page
     //this.onStoreMemberDelete();
     this.resetCheckAll();
+    this.onStoreMemberDelete();
   }
 
   /** เมื่อกดหน้าถัดไปของ Pagination */
@@ -110,6 +111,7 @@ export class GetComponent implements OnInit {
     this.startPage = this.startPage + 1;
     //this.onStoreMemberDelete();
     this.resetCheckAll();
+    this.onStoreMemberDelete();
   }
 
   /** เมื่อกดหน้าก่อนหน้าของ Pagination */
@@ -118,6 +120,7 @@ export class GetComponent implements OnInit {
     this.startPage = this.startPage - 1;
     //this.onStoreMemberDelete();
     this.resetCheckAll();
+    this.onStoreMemberDelete();
   }
 
   /** ล้างค่า CheckAll */
@@ -127,6 +130,6 @@ export class GetComponent implements OnInit {
       item.checked = this.checkAll
       return item
     });
-    this.memberService.deleteAllModel = [];
+    //this.memberService.deleteAllModel = [];
   }
 }
