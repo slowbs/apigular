@@ -40,7 +40,7 @@ if(isset($_GET['id']))
         // echo json_encode([
         //     'message' => 'valid'
         // ]);
-        $query = "UPDATE members SET mem_name = ?, mem_email = ?, mem_address = ?, mem_phone =? WHERE mem_id = ?";
+        $query = "UPDATE members SET mem_name = ?, mem_email = ?, mem_address = ?, mem_phone =?, mem_updated = NOW() WHERE mem_id = ?";
         $stmt = mysqli_prepare($database, $query);
         mysqli_stmt_bind_param($stmt, 'ssssi',
             $data->mem_name,

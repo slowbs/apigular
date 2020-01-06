@@ -9,6 +9,7 @@ export class MemberService {
 
 //private backendURL: string = 'http://localhost/github/apigular/backend/index.php/api/member';
 private backendURL: string = `${backendURL}/api/member`;
+//private backendURL: string = 'http://localhost:9000/api/member';
 public updateModel: IMember = Object.assign({});
 public deleteModel: IMember = Object.assign({});
 public deleteAllModel: string[] = [];

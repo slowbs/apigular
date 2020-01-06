@@ -27,7 +27,7 @@ export class PostComponent implements OnInit {
 
   /** submit ส่งข้อมูล */
   public onSubmit(){
-    //console.log(this.model);
+    console.log(this.model);
     this.memberService
     .postItem(this.model)
     .subscribe(
